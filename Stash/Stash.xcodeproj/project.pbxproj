@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */; };
 		EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */; };
+		EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31C21D2CE9200AF0324 /* Achievement.swift */; };
 		EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52385B21D2C25200168D1C /* AppDelegate.swift */; };
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		EF26F31C21D2CE9200AF0324 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		EF52385821D2C25200168D1C /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52385B21D2C25200168D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF52386021D2C25200168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				EF26F31121D2C32900AF0324 /* View */,
 				EF26F31521D2C7F300AF0324 /* Interactor */,
 				EF26F31621D2C86000AF0324 /* Presenter */,
+				EF26F31921D2CE7400AF0324 /* Entity */,
 			);
 			path = AchievementsModule;
 			sourceTree = "<group>";
@@ -89,6 +92,14 @@
 				EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EF26F31921D2CE7400AF0324 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EF26F31C21D2CE9200AF0324 /* Achievement.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		EF52384F21D2C25200168D1C = {
@@ -241,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */,
+				EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
 				EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */,
 			);
