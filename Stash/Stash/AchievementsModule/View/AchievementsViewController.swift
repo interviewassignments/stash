@@ -8,12 +8,29 @@
 
 import UIKit
 
-class AchievementsViewController: UIViewController {
 
+protocol AchievementsViewInterface: class {
+    func showAchievements(_ achievements: [Int])
+}
+
+
+class AchievementsViewController: UIViewController {
+    
+    //MARK: - Properties
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+
+    //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+}
 
+//MARK: - AchievementsViewInterface
+extension AchievementsViewController: AchievementsViewInterface {
+    func showAchievements(_ achievements: [Int]) {
+        
+    }
 }
