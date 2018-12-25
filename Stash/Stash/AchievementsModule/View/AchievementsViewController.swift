@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AchievementsViewController.swift
 //  Stash
 //
 //  Created by Daniel Romero on 12/25/18.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AchievementsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+    }
+    
 
 }
-

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */; };
 		EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52385B21D2C25200168D1C /* AppDelegate.swift */; };
-		EF52385E21D2C25200168D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52385D21D2C25200168D1C /* ViewController.swift */; };
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
 		EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52386421D2C25300168D1C /* LaunchScreen.storyboard */; };
@@ -26,9 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		EF52385821D2C25200168D1C /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52385B21D2C25200168D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF52385D21D2C25200168D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF52386021D2C25200168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF52386221D2C25300168D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF52386521D2C25300168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF26F31121D2C32900AF0324 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF26F31221D2C33400AF0324 /* AchievementsModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF26F31121D2C32900AF0324 /* View */,
+			);
+			path = AchievementsModule;
+			sourceTree = "<group>";
+		};
 		EF52384F21D2C25200168D1C = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				EF52385B21D2C25200168D1C /* AppDelegate.swift */,
-				EF52385D21D2C25200168D1C /* ViewController.swift */,
 				EF52385F21D2C25200168D1C /* Main.storyboard */,
-				EF52386221D2C25300168D1C /* Assets.xcassets */,
-				EF52386421D2C25300168D1C /* LaunchScreen.storyboard */,
-				EF52386721D2C25300168D1C /* Info.plist */,
+				EF26F31221D2C33400AF0324 /* AchievementsModule */,
+				EF52387B21D2C2BC00168D1C /* Resources */,
 			);
 			path = Stash;
 			sourceTree = "<group>";
@@ -94,6 +108,16 @@
 				EF52387221D2C25300168D1C /* Info.plist */,
 			);
 			path = StashTests;
+			sourceTree = "<group>";
+		};
+		EF52387B21D2C2BC00168D1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF52386221D2C25300168D1C /* Assets.xcassets */,
+				EF52386421D2C25300168D1C /* LaunchScreen.storyboard */,
+				EF52386721D2C25300168D1C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF52385E21D2C25200168D1C /* ViewController.swift in Sources */,
+				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
 				EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V56F652533;
-				INFOPLIST_FILE = Stash/Info.plist;
+				INFOPLIST_FILE = Stash/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V56F652533;
-				INFOPLIST_FILE = Stash/Info.plist;
+				INFOPLIST_FILE = Stash/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
