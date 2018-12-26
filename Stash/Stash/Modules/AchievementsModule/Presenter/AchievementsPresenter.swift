@@ -16,17 +16,21 @@ class AchievementsPresenter: AchievementsModuleInterface {
     var achievements: [Achievement]?
     
     func updateView() {
-        interactor?.fetchAchievements()
+        do {
+            try interactor?.fetchAchievements()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
 }
 
 extension AchievementsPresenter: AchievementsInteractorOutput {
     
-    func achievementsFetched(achievements: [Achievement]) {
+    func achievementsFetched(achievements: [Achievement], title: String) {
         if achievements.count > 0 {
             self.achievements = achievements
-            view?.showAchievements(achievements)
+            view?.showAchievements(achievements, title: title)
         }
     }
     

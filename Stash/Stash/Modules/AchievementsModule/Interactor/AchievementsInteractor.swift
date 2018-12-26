@@ -8,12 +8,40 @@
 
 import Foundation
 
-class AchievementsInteractor: AchievementsInteractorInput {
+enum DataError: Error {
+    case invalidPath
+    case invalidData
+    case parsingFailed
+}
+
+class AchievementsInteractor: AchievementsInteractorInput, AchievementsInteractorDataManagerProtocol {
     
     var output: AchievementsInteractorOutput?
+    var bundle: Bundle
+    var session: URLSession
+    var decoder: JSONDecoder
     
-    func fetchAchievements() {
+    init(bundle: Bundle = Bundle.main, session: URLSession = URLSession(configuration: URLSessionConfiguration.default), decoder: JSONDecoder = JSONDecoder()) {
+        self.bundle = bundle
+        self.session = session
+        self.decoder = decoder
+    }
+    
+    func fetchAchievements() throws {
         
+        guard let path = bundle.path(forResource: "achievements", ofType: "json") else {
+            throw DataError.invalidPath
+        }
+        
+        guard let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
+            throw DataError.invalidData
+        }
+        
+        guard let achievement = try? decoder.decode(AchievementResponse.self, from: data) else {
+            throw DataError.parsingFailed
+        }
+        
+        output?.achievementsFetched(achievements: achievement.achievements, title: achievement.overview.title)
     }
     
 }

@@ -24,10 +24,13 @@ class AchievementsRouter: AchievementsWireFrame {
             let router: AchievementsWireFrame = AchievementsRouter()
             
             view.presenter = presenter
+            
             presenter.view = view
             presenter.router = router
             presenter.interactor = interactor
+            
             interactor.output = presenter
+            
             router.viewController = view
             
             return navController

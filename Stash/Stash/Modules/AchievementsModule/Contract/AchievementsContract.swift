@@ -11,7 +11,7 @@ import UIKit
 
 /// Protocol that defines the responsibilites of the view.
 protocol AchievementsViewInterface: class {
-    func showAchievements(_ achievements: [Achievement])
+    func showAchievements(_ achievements: [Achievement], title: String)
 }
 
 
@@ -28,15 +28,22 @@ protocol AchievementsModuleInterface {
 
 /// Protocol that defines Interactor ---> Presenter commands.
 protocol AchievementsInteractorOutput: class {
-    func achievementsFetched(achievements: [Achievement])
+    func achievementsFetched(achievements: [Achievement], title: String)
 }
 
 
 /// Protocol that defines the use cases for the Achievement Interactor.
 protocol AchievementsInteractorInput: class {
     var output: AchievementsInteractorOutput? { get set }
+    func fetchAchievements() throws
+}
+
+
+/// Protocol that defines the dependencies the interactor requires for handling data.
+protocol AchievementsInteractorDataManagerProtocol: class {
+    var bundle: Bundle { get set }
     var session: URLSession { get set }
-    func fetchAchievements()
+    var decoder: JSONDecoder { get set }
 }
 
 
@@ -47,11 +54,3 @@ protocol AchievementsWireFrame: class {
     static func assembleModule() -> UIViewController
 }
 
-
-//
-protocol DataManagerProtocol: class {
-    var bundle: Bundle { get set }
-    var session: URLSession { get set }
-    
-    func getAchievements() -> Data
-}

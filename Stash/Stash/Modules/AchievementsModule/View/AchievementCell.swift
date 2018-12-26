@@ -18,4 +18,11 @@ class AchievementCell: UICollectionViewCell {
     @IBOutlet weak var progressPointsLabel: UILabel!
     @IBOutlet weak var totalPointsLabel: UILabel!
     
+    func set(forAchievement achievement: Achievement) {
+        self.levelCountLabel.text = achievement.level
+        self.progressPointsLabel.text = "\(achievement.progress)"
+        self.totalPointsLabel.text = "\(achievement.total)"
+        // Set image view using image url???
+    }
+    
 }

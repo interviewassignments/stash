@@ -29,7 +29,8 @@ class AchievementsViewController: UIViewController {
 //MARK: - AchievementsViewInterface
 extension AchievementsViewController: AchievementsViewInterface {
     
-    func showAchievements(_ achievements: [Achievement]) {
+    func showAchievements(_ achievements: [Achievement], title: String) {
+        self.title = title
         self.achievements = achievements
         collectionView.reloadData()
     }
@@ -42,11 +43,13 @@ extension AchievementsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return achievements.count > 0 ? achievements.count : 5
+        return achievements.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AchievementCell.reuseIdentifier, for: indexPath) as! AchievementCell
+        let achievement = achievements[indexPath.row]
+        cell.set(forAchievement: achievement)
         return cell
     }
 }
