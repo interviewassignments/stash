@@ -46,7 +46,6 @@ protocol AchievementsInteractorDataManagerProtocol: class {
     var decoder: JSONDecoder { get set }
 }
 
-
 /// Protocol that defines the responsibilities of the router
 protocol AchievementsWireFrame: class {
     var viewController: UIViewController? { get set }

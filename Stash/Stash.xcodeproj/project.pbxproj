@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1018D1D70F52127009EF36BE /* Pods_StashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569AC66AD2DD9D9B432BF6E3 /* Pods_StashTests.framework */; };
+		1BB69D97154F9A539857A729 /* Pods_Stash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E322FEB4EB961E2C0935E1 /* Pods_Stash.framework */; };
 		EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */; };
 		EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */; };
 		EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31C21D2CE9200AF0324 /* Achievement.swift */; };
@@ -36,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		569AC66AD2DD9D9B432BF6E3 /* Pods_StashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AB51BFC48418C798E9C366 /* Pods-StashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashTests/Pods-StashTests.release.xcconfig"; sourceTree = "<group>"; };
+		79E322FEB4EB961E2C0935E1 /* Pods_Stash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC915D0D1E8060BB052684DC /* Pods-Stash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.debug.xcconfig"; sourceTree = "<group>"; };
+		D5313B0FB82BADA006DFF722 /* Pods-Stash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.release.xcconfig"; sourceTree = "<group>"; };
 		EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		EF26F31C21D2CE9200AF0324 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
@@ -56,6 +63,7 @@
 		EF52386C21D2C25300168D1C /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52387021D2C25300168D1C /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
 		EF52387221D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0C49D885275B2201B8A27B5 /* Pods-StashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashTests/Pods-StashTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB69D97154F9A539857A729 /* Pods_Stash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +79,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1018D1D70F52127009EF36BE /* Pods_StashTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B238F2557DE46C85619756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E322FEB4EB961E2C0935E1 /* Pods_Stash.framework */,
+				569AC66AD2DD9D9B432BF6E3 /* Pods_StashTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FFF63E4A4C7D369E2DFFFC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC915D0D1E8060BB052684DC /* Pods-Stash.debug.xcconfig */,
+				D5313B0FB82BADA006DFF722 /* Pods-Stash.release.xcconfig */,
+				F0C49D885275B2201B8A27B5 /* Pods-StashTests.debug.xcconfig */,
+				61AB51BFC48418C798E9C366 /* Pods-StashTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF26F31121D2C32900AF0324 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +200,8 @@
 				EF52385A21D2C25200168D1C /* Stash */,
 				EF52386F21D2C25300168D1C /* StashTests */,
 				EF52385921D2C25200168D1C /* Products */,
+				9FFF63E4A4C7D369E2DFFFC3 /* Pods */,
+				42B238F2557DE46C85619756 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF52387521D2C25300168D1C /* Build configuration list for PBXNativeTarget "Stash" */;
 			buildPhases = (
+				77B9AEBE64545E6CCA236E8A /* [CP] Check Pods Manifest.lock */,
 				EF52385421D2C25200168D1C /* Sources */,
 				EF52385521D2C25200168D1C /* Frameworks */,
 				EF52385621D2C25200168D1C /* Resources */,
+				ED17C22A17EF040A13898B89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF52387821D2C25300168D1C /* Build configuration list for PBXNativeTarget "StashTests" */;
 			buildPhases = (
+				7E1D6FD0B4244A6016AB4F48 /* [CP] Check Pods Manifest.lock */,
 				EF52386821D2C25300168D1C /* Sources */,
 				EF52386921D2C25300168D1C /* Frameworks */,
 				EF52386A21D2C25300168D1C /* Resources */,
@@ -310,6 +345,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77B9AEBE64545E6CCA236E8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1D6FD0B4244A6016AB4F48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED17C22A17EF040A13898B89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF52385421D2C25200168D1C /* Sources */ = {
@@ -486,6 +590,7 @@
 		};
 		EF52387621D2C25300168D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC915D0D1E8060BB052684DC /* Pods-Stash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +609,7 @@
 		};
 		EF52387721D2C25300168D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5313B0FB82BADA006DFF722 /* Pods-Stash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +628,7 @@
 		};
 		EF52387921D2C25300168D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C49D885275B2201B8A27B5 /* Pods-StashTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +650,7 @@
 		};
 		EF52387A21D2C25300168D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AB51BFC48418C798E9C366 /* Pods-StashTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

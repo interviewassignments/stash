@@ -22,7 +22,7 @@ class AchievementsPresenter: AchievementsModuleInterface {
             print(error.localizedDescription)
         }
     }
-    
+
 }
 
 extension AchievementsPresenter: AchievementsInteractorOutput {

@@ -36,11 +36,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="307" height="193"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-9r-NSR">
-                                                    <rect key="frame" x="8" y="28" width="291" height="157"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-9r-NSR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="193"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bow-Nw-FuF">
-                                                    <rect key="frame" x="133" y="36" width="40" height="66.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bow-Nw-FuF">
+                                                    <rect key="frame" x="133.5" y="0.0" width="40" height="66.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhy-BI-yB8">
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="20.5"/>
@@ -77,18 +77,17 @@
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottomMargin" secondItem="LAC-9r-NSR" secondAttribute="bottom" id="2Rx-Sj-tAp"/>
-                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="top" secondItem="9pm-HN-sVP" secondAttribute="topMargin" id="D8Z-8m-20S"/>
+                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="width" secondItem="9pm-HN-sVP" secondAttribute="width" id="7Og-GQ-iiI"/>
+                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="centerY" secondItem="9pm-HN-sVP" secondAttribute="centerY" id="C3U-br-nvX"/>
                                             <constraint firstItem="bow-Nw-FuF" firstAttribute="top" secondItem="LAC-9r-NSR" secondAttribute="top" id="Oc8-Pq-omt"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="LAC-9r-NSR" secondAttribute="trailing" id="ZDo-ow-eQe"/>
-                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="leading" secondItem="9pm-HN-sVP" secondAttribute="leadingMargin" id="jwf-Ne-XXq"/>
+                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="height" secondItem="9pm-HN-sVP" secondAttribute="height" id="R0W-tG-2JA"/>
+                                            <constraint firstItem="LAC-9r-NSR" firstAttribute="centerX" secondItem="9pm-HN-sVP" secondAttribute="centerX" id="fRD-SQ-Ytq"/>
                                             <constraint firstItem="bow-Nw-FuF" firstAttribute="centerX" secondItem="LAC-9r-NSR" secondAttribute="centerX" id="ofT-gD-p2a"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
+                                                <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>

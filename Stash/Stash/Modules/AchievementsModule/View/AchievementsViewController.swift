@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AchievementsViewController: UIViewController {
     
     //MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
-    private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 60.0, right: 20.0)
+    private let sectionInsets = UIEdgeInsets(top: 30.0, left: 20.0, bottom: 10.0, right: 20.0)
     var presenter: AchievementsModuleInterface!
     var achievements: [Achievement] = []
 
@@ -50,6 +51,7 @@ extension AchievementsViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AchievementCell.reuseIdentifier, for: indexPath) as! AchievementCell
         let achievement = achievements[indexPath.row]
         cell.set(forAchievement: achievement)
+        cell.imageView.sd_setImage(with: URL(string: achievement.backgroundImageUrl), completed: nil)
         return cell
     }
 }
@@ -66,7 +68,7 @@ extension AchievementsViewController : UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 30
+        return 15
     }
     
 }
