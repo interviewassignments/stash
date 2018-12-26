@@ -11,6 +11,14 @@
 		EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */; };
 		EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31C21D2CE9200AF0324 /* Achievement.swift */; };
 		EF26F31F21D2D29400AF0324 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31E21D2D29400AF0324 /* AchievementsInteractor.swift */; };
+		EF26F32121D2D56E00AF0324 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F32021D2D56E00AF0324 /* AchievementCell.swift */; };
+		EF26F32621D2E14100AF0324 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */; };
+		EF48A6D721D3FE2B000B0FAD /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6D621D3FE2B000B0FAD /* RootContract.swift */; };
+		EF48A6D921D3FE52000B0FAD /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6D821D3FE52000B0FAD /* RootRouter.swift */; };
+		EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6DB21D3FEB2000B0FAD /* AchievementsRouter.swift */; };
+		EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6DE21D3FECE000B0FAD /* AchievementsContract.swift */; };
+		EF48A6E121D41923000B0FAD /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = EF48A6E021D41923000B0FAD /* achievements.json */; };
+		EF48A6E421D41979000B0FAD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6E321D41979000B0FAD /* DataManager.swift */; };
 		EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52385B21D2C25200168D1C /* AppDelegate.swift */; };
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
@@ -33,6 +41,14 @@
 		EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		EF26F31C21D2CE9200AF0324 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		EF26F31E21D2D29400AF0324 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		EF26F32021D2D56E00AF0324 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		EF48A6D621D3FE2B000B0FAD /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		EF48A6D821D3FE52000B0FAD /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		EF48A6DB21D3FEB2000B0FAD /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		EF48A6DE21D3FECE000B0FAD /* AchievementsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsContract.swift; sourceTree = "<group>"; };
+		EF48A6E021D41923000B0FAD /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		EF48A6E321D41979000B0FAD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EF52385821D2C25200168D1C /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52385B21D2C25200168D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF52386021D2C25200168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */,
+				EF26F32021D2D56E00AF0324 /* AchievementCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,10 +90,13 @@
 		EF26F31221D2C33400AF0324 /* AchievementsModule */ = {
 			isa = PBXGroup;
 			children = (
+				EF48A6DD21D3FEBA000B0FAD /* Contract */,
 				EF26F31121D2C32900AF0324 /* View */,
 				EF26F31521D2C7F300AF0324 /* Interactor */,
 				EF26F31621D2C86000AF0324 /* Presenter */,
 				EF26F31921D2CE7400AF0324 /* Entity */,
+				EF48A6DA21D3FE8A000B0FAD /* Router */,
+				EF48A6E221D4195C000B0FAD /* DataManager */,
 			);
 			path = AchievementsModule;
 			sourceTree = "<group>";
@@ -105,6 +125,56 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		EF26F32421D2E12800AF0324 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF48A6D421D3FDEA000B0FAD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A6D521D3FDFB000B0FAD /* Root */,
+				EF26F31221D2C33400AF0324 /* AchievementsModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF48A6D521D3FDFB000B0FAD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A6D621D3FE2B000B0FAD /* RootContract.swift */,
+				EF48A6D821D3FE52000B0FAD /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EF48A6DA21D3FE8A000B0FAD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A6DB21D3FEB2000B0FAD /* AchievementsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EF48A6DD21D3FEBA000B0FAD /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A6DE21D3FECE000B0FAD /* AchievementsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		EF48A6E221D4195C000B0FAD /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF48A6E321D41979000B0FAD /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		EF52384F21D2C25200168D1C = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +198,8 @@
 			children = (
 				EF52385B21D2C25200168D1C /* AppDelegate.swift */,
 				EF52385F21D2C25200168D1C /* Main.storyboard */,
-				EF26F31221D2C33400AF0324 /* AchievementsModule */,
+				EF48A6D421D3FDEA000B0FAD /* Modules */,
+				EF26F32421D2E12800AF0324 /* Extensions */,
 				EF52387B21D2C2BC00168D1C /* Resources */,
 			);
 			path = Stash;
@@ -149,6 +220,7 @@
 				EF52386221D2C25300168D1C /* Assets.xcassets */,
 				EF52386421D2C25300168D1C /* LaunchScreen.storyboard */,
 				EF52386721D2C25300168D1C /* Info.plist */,
+				EF48A6E021D41923000B0FAD /* achievements.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -235,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */,
+				EF48A6E121D41923000B0FAD /* achievements.json in Resources */,
 				EF52386321D2C25300168D1C /* Assets.xcassets in Resources */,
 				EF52386121D2C25200168D1C /* Main.storyboard in Resources */,
 			);
@@ -255,10 +328,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */,
+				EF48A6E421D41979000B0FAD /* DataManager.swift in Sources */,
+				EF26F32121D2D56E00AF0324 /* AchievementCell.swift in Sources */,
+				EF26F32621D2E14100AF0324 /* UIViewExtensions.swift in Sources */,
 				EF26F31F21D2D29400AF0324 /* AchievementsInteractor.swift in Sources */,
+				EF48A6D921D3FE52000B0FAD /* RootRouter.swift in Sources */,
+				EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */,
 				EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */,
+				EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
 				EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */,
+				EF48A6D721D3FE2B000B0FAD /* RootContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
