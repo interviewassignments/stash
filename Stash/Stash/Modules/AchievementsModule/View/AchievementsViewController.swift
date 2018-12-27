@@ -13,7 +13,7 @@ class AchievementsViewController: UIViewController {
     
     //MARK: - Properties
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionViewProtocol!
     private let sectionInsets = UIEdgeInsets(top: 30.0, left: 20.0, bottom: 10.0, right: 20.0)
     var presenter: AchievementsModuleInterface!
     var achievements: [Achievement] = []

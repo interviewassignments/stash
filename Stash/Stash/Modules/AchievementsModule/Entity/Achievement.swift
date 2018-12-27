@@ -54,3 +54,16 @@ struct Achievement: Codable {
     
 }
 
+extension Achievement: Equatable {
+    
+    public static func == (lhs: Achievement, rhs: Achievement) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.level == rhs.level &&
+            lhs.progress == rhs.progress &&
+            lhs.total == rhs.total &&
+            lhs.backgroundImageUrl == rhs.backgroundImageUrl &&
+            lhs.accessible == rhs.accessible
+    }
+
+}
+

@@ -42,8 +42,9 @@ protocol AchievementsInteractorInput: class {
 /// Protocol that defines the dependencies the interactor requires for handling data.
 protocol AchievementsInteractorDataManagerProtocol: class {
     var bundle: Bundle { get set }
-    var session: URLSession { get set }
     var decoder: JSONDecoder { get set }
+    var resourcePath: String { get set }
+    var resourceType: String { get set }
 }
 
 /// Protocol that defines the responsibilities of the router

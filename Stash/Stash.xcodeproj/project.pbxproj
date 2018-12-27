@@ -26,7 +26,13 @@
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
 		EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52386421D2C25300168D1C /* LaunchScreen.storyboard */; };
-		EF52387121D2C25300168D1C /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52387021D2C25300168D1C /* StashTests.swift */; };
+		EF91656821D5616F00E99297 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EF91656721D5616F00E99297 /* test.json */; };
+		EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */; };
+		EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */; };
+		EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */; };
+		EFDFA05C21D472D100B73E5E /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05B21D472D100B73E5E /* TestPresenter.swift */; };
+		EFDFA05E21D4787300B73E5E /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */; };
+		EFDFA06021D478E900B73E5E /* TestInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05F21D478E900B73E5E /* TestInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +71,15 @@
 		EF52386521D2C25300168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF52386721D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF52386C21D2C25300168D1C /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF52387021D2C25300168D1C /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
 		EF52387221D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF91656721D5616F00E99297 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StashTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewControllerTests.swift; sourceTree = "<group>"; };
+		EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionView.swift; sourceTree = "<group>"; };
+		EFDFA05B21D472D100B73E5E /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		EFDFA05F21D478E900B73E5E /* TestInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractorOutput.swift; sourceTree = "<group>"; };
 		F0C49D885275B2201B8A27B5 /* Pods-StashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashTests/Pods-StashTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */,
+				EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,8 +249,9 @@
 		EF52386F21D2C25300168D1C /* StashTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF52387021D2C25300168D1C /* StashTests.swift */,
-				EF52387221D2C25300168D1C /* Info.plist */,
+				EFDFA05A21D471F700B73E5E /* Tests */,
+				EFDFA05621D46FD200B73E5E /* Test Fakes */,
+				EFDFA05921D471E800B73E5E /* Misc */,
 			);
 			path = StashTests;
 			sourceTree = "<group>";
@@ -250,6 +265,35 @@
 				EF48A6E021D41923000B0FAD /* achievements.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFDFA05621D46FD200B73E5E /* Test Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */,
+				EFDFA05B21D472D100B73E5E /* TestPresenter.swift */,
+				EFDFA05F21D478E900B73E5E /* TestInteractorOutput.swift */,
+			);
+			path = "Test Fakes";
+			sourceTree = "<group>";
+		};
+		EFDFA05921D471E800B73E5E /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */,
+				EF52387221D2C25300168D1C /* Info.plist */,
+				EF91656721D5616F00E99297 /* test.json */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		EFDFA05A21D471F700B73E5E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */,
+				EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +352,7 @@
 					};
 					EF52386B21D2C25300168D1C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = EF52385721D2C25200168D1C;
 					};
 				};
@@ -348,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91656821D5616F00E99297 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +483,7 @@
 				EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */,
 				EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */,
 				EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */,
+				EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
 				EF48A70A21D44326000B0FAD /* AchievementLevelView.swift in Sources */,
 				EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */,
@@ -448,7 +495,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF52387121D2C25300168D1C /* StashTests.swift in Sources */,
+				EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */,
+				EFDFA06021D478E900B73E5E /* TestInteractorOutput.swift in Sources */,
+				EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */,
+				EFDFA05E21D4787300B73E5E /* AchievementsInteractorTests.swift in Sources */,
+				EFDFA05C21D472D100B73E5E /* TestPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,9 +693,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V56F652533;
-				INFOPLIST_FILE = StashTests/Info.plist;
+				INFOPLIST_FILE = StashTests/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +704,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.danielromero.StashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StashTests/Misc/StashTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
@@ -664,9 +718,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V56F652533;
-				INFOPLIST_FILE = StashTests/Info.plist;
+				INFOPLIST_FILE = StashTests/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,6 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.danielromero.StashTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StashTests/Misc/StashTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
