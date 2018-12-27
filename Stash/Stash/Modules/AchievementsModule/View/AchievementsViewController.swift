@@ -60,7 +60,7 @@ extension AchievementsViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let widthPerItem = collectionView.frame.width - (sectionInsets.left + sectionInsets.right)
-        return CGSize(width: widthPerItem, height: collectionView.frame.height * 0.25)
+        return CGSize(width: widthPerItem, height: collectionView.frame.height * 0.3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

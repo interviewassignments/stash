@@ -14,15 +14,20 @@ class AchievementCell: UICollectionViewCell {
     static let reuseIdentifier = "achievement"
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var levelCountLabel: UILabel!
+    @IBOutlet weak var achievementLevelView: AchievementLevelView!
     @IBOutlet weak var progressPointsLabel: UILabel!
     @IBOutlet weak var totalPointsLabel: UILabel!
     
     func set(forAchievement achievement: Achievement) {
-        self.levelCountLabel.text = achievement.level
-        self.progressPointsLabel.text = "\(achievement.progress)"
-        self.totalPointsLabel.text = "\(achievement.total)"
+        achievementLevelView.levelCountLabel.text = achievement.level
+        self.progressPointsLabel.text = "\(achievement.progress)pts"
+        self.totalPointsLabel.text = "\(achievement.total)pts"
         // Set image view using image url???
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        achievementLevelView.cornerRadius = achievementLevelView.frame.size.width / 2
     }
     
 }

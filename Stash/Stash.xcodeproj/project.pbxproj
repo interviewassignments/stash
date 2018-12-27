@@ -20,6 +20,8 @@
 		EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6DB21D3FEB2000B0FAD /* AchievementsRouter.swift */; };
 		EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A6DE21D3FECE000B0FAD /* AchievementsContract.swift */; };
 		EF48A6E121D41923000B0FAD /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = EF48A6E021D41923000B0FAD /* achievements.json */; };
+		EF48A70A21D44326000B0FAD /* AchievementLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48A70921D44326000B0FAD /* AchievementLevelView.swift */; };
+		EF48A70C21D44338000B0FAD /* AchievementLevelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF48A70B21D44338000B0FAD /* AchievementLevelView.xib */; };
 		EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF52385B21D2C25200168D1C /* AppDelegate.swift */; };
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		EF48A6DB21D3FEB2000B0FAD /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
 		EF48A6DE21D3FECE000B0FAD /* AchievementsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsContract.swift; sourceTree = "<group>"; };
 		EF48A6E021D41923000B0FAD /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		EF48A70921D44326000B0FAD /* AchievementLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementLevelView.swift; sourceTree = "<group>"; };
+		EF48A70B21D44338000B0FAD /* AchievementLevelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementLevelView.xib; sourceTree = "<group>"; };
 		EF52385821D2C25200168D1C /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52385B21D2C25200168D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF52386021D2C25200168D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			children = (
 				EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */,
 				EF26F32021D2D56E00AF0324 /* AchievementCell.swift */,
+				EF48A70921D44326000B0FAD /* AchievementLevelView.swift */,
+				EF48A70B21D44338000B0FAD /* AchievementLevelView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */,
+				EF48A70C21D44338000B0FAD /* AchievementLevelView.xib in Resources */,
 				EF48A6E121D41923000B0FAD /* achievements.json in Resources */,
 				EF52386321D2C25300168D1C /* Assets.xcassets in Resources */,
 				EF52386121D2C25200168D1C /* Main.storyboard in Resources */,
@@ -429,6 +436,7 @@
 				EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */,
 				EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
+				EF48A70A21D44326000B0FAD /* AchievementLevelView.swift in Sources */,
 				EF52385C21D2C25200168D1C /* AppDelegate.swift in Sources */,
 				EF48A6D721D3FE2B000B0FAD /* RootContract.swift in Sources */,
 			);
