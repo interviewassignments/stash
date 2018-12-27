@@ -23,7 +23,7 @@ class AchievementsPresenter: AchievementsModuleInterface {
         do {
             try interactor?.fetchAchievements()
         } catch {
-            print(error.localizedDescription)
+            view?.showAlertForError(error as! InteractorDataError)
         }
     }
 

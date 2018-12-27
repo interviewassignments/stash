@@ -27,6 +27,9 @@
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
 		EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52386421D2C25300168D1C /* LaunchScreen.storyboard */; };
 		EF91656821D5616F00E99297 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EF91656721D5616F00E99297 /* test.json */; };
+		EF91656A21D56BAC00E99297 /* AchievementsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */; };
+		EF91656C21D56C3300E99297 /* TestAchievementsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */; };
+		EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */; };
 		EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */; };
 		EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */; };
 		EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */; };
@@ -73,6 +76,9 @@
 		EF52386C21D2C25300168D1C /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52387221D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF91656721D5616F00E99297 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenterTests.swift; sourceTree = "<group>"; };
+		EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAchievementsViewInterface.swift; sourceTree = "<group>"; };
+		EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAchievementsInteractorInput.swift; sourceTree = "<group>"; };
 		EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StashTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewControllerTests.swift; sourceTree = "<group>"; };
 		EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
@@ -273,6 +279,8 @@
 				EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */,
 				EFDFA05B21D472D100B73E5E /* TestPresenter.swift */,
 				EFDFA05F21D478E900B73E5E /* TestInteractorOutput.swift */,
+				EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */,
+				EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */,
 			);
 			path = "Test Fakes";
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 			children = (
 				EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */,
 				EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */,
+				EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -497,9 +506,12 @@
 			files = (
 				EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */,
 				EFDFA06021D478E900B73E5E /* TestInteractorOutput.swift in Sources */,
+				EF91656A21D56BAC00E99297 /* AchievementsPresenterTests.swift in Sources */,
 				EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */,
+				EF91656C21D56C3300E99297 /* TestAchievementsViewInterface.swift in Sources */,
 				EFDFA05E21D4787300B73E5E /* AchievementsInteractorTests.swift in Sources */,
 				EFDFA05C21D472D100B73E5E /* TestPresenter.swift in Sources */,
+				EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

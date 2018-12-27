@@ -12,6 +12,7 @@ import UIKit
 /// Protocol that defines the responsibilites of the view.
 protocol AchievementsViewInterface: class {
     func showAchievements(_ achievements: [Achievement], title: String)
+    func showAlertForError(_ error: InteractorDataError)
 }
 
 

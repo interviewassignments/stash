@@ -38,6 +38,10 @@ extension AchievementsViewController: AchievementsViewInterface {
         self.achievements = achievements
         collectionView.reloadData()
     }
+    
+    func showAlertForError(_ error: InteractorDataError) {
+        
+    }
 }
 
 //MARK: - UICollectionViewDataSource
