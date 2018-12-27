@@ -1,0 +1,22 @@
+PODS:
+  - LinearProgressBar (1.0.1)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+
+DEPENDENCIES:
+  - LinearProgressBar
+  - SDWebImage (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LinearProgressBar
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  LinearProgressBar: f6a74dbabed229dbb1a7978089e2e4317a3a0ee0
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+
+PODFILE CHECKSUM: 930a77229edd9852850fa70cae7f219834561bfd
+
+COCOAPODS: 1.5.3
