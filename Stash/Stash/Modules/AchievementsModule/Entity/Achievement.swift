@@ -14,13 +14,9 @@ struct AchievementResponse: Codable {
     
     let overview: Overview
     let achievements: [Achievement]
-    let success: Bool = true
-    let status: Int = 200
+    let success: Bool
+    let status: Int
     
-    enum CodingKeys: String, CodingKey {
-        case overview
-        case achievements
-    }
 }
 
 
@@ -53,6 +49,28 @@ struct Achievement: Codable {
     }
     
 }
+
+
+extension AchievementResponse: Equatable {
+    
+    public static func == (lhs: AchievementResponse, rhs: AchievementResponse) -> Bool {
+        return lhs.overview == rhs.overview &&
+            lhs.achievements == rhs.achievements &&
+            lhs.success == rhs.success &&
+            lhs.status == rhs.status
+    }
+    
+}
+
+
+extension Overview: Equatable {
+    
+    public static func == (lhs: Overview, rhs: Overview) -> Bool {
+        return lhs.title == rhs.title
+    }
+    
+}
+
 
 extension Achievement: Equatable {
     

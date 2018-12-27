@@ -11,7 +11,6 @@
 		1BB69D97154F9A539857A729 /* Pods_Stash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E322FEB4EB961E2C0935E1 /* Pods_Stash.framework */; };
 		EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */; };
 		EF26F31821D2C89F00AF0324 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */; };
-		EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31C21D2CE9200AF0324 /* Achievement.swift */; };
 		EF26F31F21D2D29400AF0324 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F31E21D2D29400AF0324 /* AchievementsInteractor.swift */; };
 		EF26F32121D2D56E00AF0324 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F32021D2D56E00AF0324 /* AchievementCell.swift */; };
 		EF26F32621D2E14100AF0324 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */; };
@@ -26,10 +25,11 @@
 		EF52386121D2C25200168D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52385F21D2C25200168D1C /* Main.storyboard */; };
 		EF52386321D2C25300168D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF52386221D2C25300168D1C /* Assets.xcassets */; };
 		EF52386621D2C25300168D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF52386421D2C25300168D1C /* LaunchScreen.storyboard */; };
-		EF91656821D5616F00E99297 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EF91656721D5616F00E99297 /* test.json */; };
 		EF91656A21D56BAC00E99297 /* AchievementsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */; };
 		EF91656C21D56C3300E99297 /* TestAchievementsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */; };
 		EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */; };
+		EF91657021D5748300E99297 /* AchievementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656F21D5748300E99297 /* AchievementTests.swift */; };
+		EF91657421D5787A00E99297 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657321D5787A00E99297 /* Achievement.swift */; };
 		EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */; };
 		EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */; };
 		EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */; };
@@ -56,7 +56,6 @@
 		D5313B0FB82BADA006DFF722 /* Pods-Stash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.release.xcconfig"; sourceTree = "<group>"; };
 		EF26F31321D2C35500AF0324 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		EF26F31721D2C89F00AF0324 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
-		EF26F31C21D2CE9200AF0324 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		EF26F31E21D2D29400AF0324 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 		EF26F32021D2D56E00AF0324 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -75,10 +74,11 @@
 		EF52386721D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF52386C21D2C25300168D1C /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF52387221D2C25300168D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF91656721D5616F00E99297 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenterTests.swift; sourceTree = "<group>"; };
 		EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAchievementsViewInterface.swift; sourceTree = "<group>"; };
 		EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAchievementsInteractorInput.swift; sourceTree = "<group>"; };
+		EF91656F21D5748300E99297 /* AchievementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTests.swift; sourceTree = "<group>"; };
+		EF91657321D5787A00E99297 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StashTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewControllerTests.swift; sourceTree = "<group>"; };
 		EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		EF26F31921D2CE7400AF0324 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				EF26F31C21D2CE9200AF0324 /* Achievement.swift */,
+				EF91657321D5787A00E99297 /* Achievement.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -290,7 +290,6 @@
 			children = (
 				EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */,
 				EF52387221D2C25300168D1C /* Info.plist */,
-				EF91656721D5616F00E99297 /* test.json */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -301,6 +300,7 @@
 				EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */,
 				EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */,
 				EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */,
+				EF91656F21D5748300E99297 /* AchievementTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -402,7 +402,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF91656821D5616F00E99297 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +489,8 @@
 				EF26F31F21D2D29400AF0324 /* AchievementsInteractor.swift in Sources */,
 				EF48A6D921D3FE52000B0FAD /* RootRouter.swift in Sources */,
 				EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */,
-				EF26F31D21D2CE9200AF0324 /* Achievement.swift in Sources */,
 				EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */,
+				EF91657421D5787A00E99297 /* Achievement.swift in Sources */,
 				EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
 				EF48A70A21D44326000B0FAD /* AchievementLevelView.swift in Sources */,
@@ -510,6 +509,7 @@
 				EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */,
 				EF91656C21D56C3300E99297 /* TestAchievementsViewInterface.swift in Sources */,
 				EFDFA05E21D4787300B73E5E /* AchievementsInteractorTests.swift in Sources */,
+				EF91657021D5748300E99297 /* AchievementTests.swift in Sources */,
 				EFDFA05C21D472D100B73E5E /* TestPresenter.swift in Sources */,
 				EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */,
 			);
