@@ -30,6 +30,11 @@
 		EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */; };
 		EF91657021D5748300E99297 /* AchievementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91656F21D5748300E99297 /* AchievementTests.swift */; };
 		EF91657421D5787A00E99297 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657321D5787A00E99297 /* Achievement.swift */; };
+		EF91657621D57E9600E99297 /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657521D57E9600E99297 /* RootRouterTests.swift */; };
+		EF91657821D57ED000E99297 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657721D57ED000E99297 /* UIWindowExtensions.swift */; };
+		EF91657A21D57F4200E99297 /* TestWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657921D57F4200E99297 /* TestWindow.swift */; };
+		EF91657C21D5829F00E99297 /* AchievementsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF91657B21D5829F00E99297 /* AchievementsRouterTests.swift */; };
+		EF91657E21D58BC400E99297 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = EF91657D21D58BC400E99297 /* test.json */; };
 		EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */; };
 		EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */; };
 		EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFA05721D46FF400B73E5E /* TestCollectionView.swift */; };
@@ -79,6 +84,11 @@
 		EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAchievementsInteractorInput.swift; sourceTree = "<group>"; };
 		EF91656F21D5748300E99297 /* AchievementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTests.swift; sourceTree = "<group>"; };
 		EF91657321D5787A00E99297 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		EF91657521D57E9600E99297 /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
+		EF91657721D57ED000E99297 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
+		EF91657921D57F4200E99297 /* TestWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWindow.swift; sourceTree = "<group>"; };
+		EF91657B21D5829F00E99297 /* AchievementsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouterTests.swift; sourceTree = "<group>"; };
+		EF91657D21D58BC400E99297 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StashTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EFDFA05121D46C3400B73E5E /* AchievementViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewControllerTests.swift; sourceTree = "<group>"; };
 		EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 			children = (
 				EF26F32521D2E14100AF0324 /* UIViewExtensions.swift */,
 				EFDFA05421D46F6C00B73E5E /* UICollectionViewExtensions.swift */,
+				EF91657721D57ED000E99297 /* UIWindowExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +292,7 @@
 				EFDFA05F21D478E900B73E5E /* TestInteractorOutput.swift */,
 				EF91656B21D56C3300E99297 /* TestAchievementsViewInterface.swift */,
 				EF91656D21D56C4400E99297 /* TestAchievementsInteractorInput.swift */,
+				EF91657921D57F4200E99297 /* TestWindow.swift */,
 			);
 			path = "Test Fakes";
 			sourceTree = "<group>";
@@ -290,6 +302,7 @@
 			children = (
 				EFDFA05021D46C3300B73E5E /* StashTests-Bridging-Header.h */,
 				EF52387221D2C25300168D1C /* Info.plist */,
+				EF91657D21D58BC400E99297 /* test.json */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -301,6 +314,8 @@
 				EFDFA05D21D4787300B73E5E /* AchievementsInteractorTests.swift */,
 				EF91656921D56BAC00E99297 /* AchievementsPresenterTests.swift */,
 				EF91656F21D5748300E99297 /* AchievementTests.swift */,
+				EF91657521D57E9600E99297 /* RootRouterTests.swift */,
+				EF91657B21D5829F00E99297 /* AchievementsRouterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -402,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91657E21D58BC400E99297 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +506,7 @@
 				EF48A6D921D3FE52000B0FAD /* RootRouter.swift in Sources */,
 				EF48A6DF21D3FECE000B0FAD /* AchievementsContract.swift in Sources */,
 				EF48A6DC21D3FEB2000B0FAD /* AchievementsRouter.swift in Sources */,
+				EF91657821D57ED000E99297 /* UIWindowExtensions.swift in Sources */,
 				EF91657421D5787A00E99297 /* Achievement.swift in Sources */,
 				EFDFA05521D46F6C00B73E5E /* UICollectionViewExtensions.swift in Sources */,
 				EF26F31421D2C35500AF0324 /* AchievementsViewController.swift in Sources */,
@@ -503,15 +520,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91657C21D5829F00E99297 /* AchievementsRouterTests.swift in Sources */,
 				EFDFA05821D46FF400B73E5E /* TestCollectionView.swift in Sources */,
 				EFDFA06021D478E900B73E5E /* TestInteractorOutput.swift in Sources */,
 				EF91656A21D56BAC00E99297 /* AchievementsPresenterTests.swift in Sources */,
 				EFDFA05221D46C3400B73E5E /* AchievementViewControllerTests.swift in Sources */,
 				EF91656C21D56C3300E99297 /* TestAchievementsViewInterface.swift in Sources */,
 				EFDFA05E21D4787300B73E5E /* AchievementsInteractorTests.swift in Sources */,
+				EF91657621D57E9600E99297 /* RootRouterTests.swift in Sources */,
 				EF91657021D5748300E99297 /* AchievementTests.swift in Sources */,
 				EFDFA05C21D472D100B73E5E /* TestPresenter.swift in Sources */,
 				EF91656E21D56C4400E99297 /* TestAchievementsInteractorInput.swift in Sources */,
+				EF91657A21D57F4200E99297 /* TestWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

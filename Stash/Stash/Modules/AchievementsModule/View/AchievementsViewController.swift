@@ -39,8 +39,13 @@ extension AchievementsViewController: AchievementsViewInterface {
         collectionView.reloadData()
     }
     
+    
     func showAlertForError(_ error: InteractorDataError) {
-        
+        self.title = ""
+        let alert = UIAlertController(title: "No Achievements", message: error.localizedDescription, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

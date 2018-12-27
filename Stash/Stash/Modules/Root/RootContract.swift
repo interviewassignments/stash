@@ -9,5 +9,5 @@
 import UIKit
 
 protocol RootWireFrame: class {
-    func presentAchievementsScreen(in window: UIWindow)
+    func presentAchievementsScreen(in window: UIWindowProtocol)
 }

@@ -17,6 +17,7 @@ class AchievementTests: XCTestCase {
         let expectedAchievements = [achievement]
         let expectedSuccess = true
         let expectedStatus = 200
+        let expectedProgressPercentage = 100.0
         
         let achievementResponse = AchievementResponse(overview: expectedOverview, achievements: expectedAchievements, success: expectedSuccess, status: expectedStatus)
         
@@ -24,6 +25,7 @@ class AchievementTests: XCTestCase {
         XCTAssertEqual(achievementResponse.achievements, expectedAchievements)
         XCTAssertEqual(achievementResponse.success, expectedSuccess)
         XCTAssertEqual(achievementResponse.status, expectedStatus)
+        XCTAssertEqual(achievement.progressPercentage, expectedProgressPercentage)
     }
  
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class RootRouter: RootWireFrame {
     
-    func presentAchievementsScreen(in window: UIWindow) {
+    func presentAchievementsScreen(in window: UIWindowProtocol) {
         window.makeKeyAndVisible()
         window.rootViewController = AchievementsRouter.assembleModule()
     }
