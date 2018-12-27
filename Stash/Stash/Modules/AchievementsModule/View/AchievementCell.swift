@@ -19,9 +19,11 @@ class AchievementCell: UICollectionViewCell {
     @IBOutlet weak var progressBarView: LinearProgressBar!
     @IBOutlet weak var progressPointsLabel: UILabel!
     @IBOutlet weak var totalPointsLabel: UILabel!
+    @IBOutlet weak var disabledView: UIView!
     
     
     func set(forAchievement achievement: Achievement) {
+        disabledView.isHidden = achievement.accessible
         achievementLevelView.levelCountLabel.text = achievement.level
         progressBarView.progressValue = CGFloat(achievement.progressPercentage)
         self.progressPointsLabel.text = "\(achievement.progress)pts"

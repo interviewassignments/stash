@@ -78,6 +78,11 @@
                                                     <color key="textColor" white="1" alpha="0.89656464039999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oOk-W7-yMX" userLabel="Disabled View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="193"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
@@ -104,6 +109,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="achievementLevelView" destination="7gM-HV-ZUC" id="eiE-Ri-B4N"/>
+                                            <outlet property="disabledView" destination="oOk-W7-yMX" id="z3H-Y7-gfy"/>
                                             <outlet property="imageView" destination="LAC-9r-NSR" id="Wbt-2W-prQ"/>
                                             <outlet property="progressBarView" destination="njV-Cr-JKK" id="lIs-px-KJl"/>
                                             <outlet property="progressPointsLabel" destination="e0s-Tu-P3i" id="KmW-Pl-L6e"/>
