@@ -7,6 +7,7 @@ target 'Stash' do
 
   # Pods for Stash
   pod 'SDWebImage', '~> 4.0'
+  pod 'LinearProgressBar'
 
   target 'StashTests' do
     inherit! :search_paths

@@ -10,10 +10,14 @@ import Foundation
 
 class AchievementsPresenter: AchievementsModuleInterface {
     
+    //MARK: - Properties
+    
     var view: AchievementsViewInterface?
     var interactor: AchievementsInteractorInput?
     var router: AchievementsWireFrame?
     var achievements: [Achievement]?
+    
+    //MARK: - AchievementsModuleInterface
     
     func updateView() {
         do {
@@ -24,6 +28,8 @@ class AchievementsPresenter: AchievementsModuleInterface {
     }
 
 }
+
+//MARK: - AchievementsInteractorOutput
 
 extension AchievementsPresenter: AchievementsInteractorOutput {
     

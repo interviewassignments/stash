@@ -39,6 +39,10 @@ struct Achievement: Codable {
     let backgroundImageUrl: String
     let accessible: Bool
     
+    var progressPercentage: Double {
+        return (Double(progress) / Double(total)) * 100
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id
         case level

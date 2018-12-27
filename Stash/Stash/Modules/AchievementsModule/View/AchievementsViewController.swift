@@ -12,12 +12,14 @@ import SDWebImage
 class AchievementsViewController: UIViewController {
     
     //MARK: - Properties
+    
     @IBOutlet weak var collectionView: UICollectionView!
     private let sectionInsets = UIEdgeInsets(top: 30.0, left: 20.0, bottom: 10.0, right: 20.0)
     var presenter: AchievementsModuleInterface!
     var achievements: [Achievement] = []
 
     //MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -28,6 +30,7 @@ class AchievementsViewController: UIViewController {
 }
 
 //MARK: - AchievementsViewInterface
+
 extension AchievementsViewController: AchievementsViewInterface {
     
     func showAchievements(_ achievements: [Achievement], title: String) {
@@ -36,6 +39,8 @@ extension AchievementsViewController: AchievementsViewInterface {
         collectionView.reloadData()
     }
 }
+
+//MARK: - UICollectionViewDataSource
 
 extension AchievementsViewController: UICollectionViewDataSource {
     
@@ -56,12 +61,9 @@ extension AchievementsViewController: UICollectionViewDataSource {
     }
 }
 
+//MARK: - UICollectionViewDelegateLayout
+
 extension AchievementsViewController : UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let widthPerItem = collectionView.frame.width - (sectionInsets.left + sectionInsets.right)
-        return CGSize(width: widthPerItem, height: collectionView.frame.height * 0.3)
-    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LinearProgressBar
 
 @IBDesignable
 class AchievementCell: UICollectionViewCell {
@@ -15,14 +16,16 @@ class AchievementCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var achievementLevelView: AchievementLevelView!
+    @IBOutlet weak var progressBarView: LinearProgressBar!
     @IBOutlet weak var progressPointsLabel: UILabel!
     @IBOutlet weak var totalPointsLabel: UILabel!
     
+    
     func set(forAchievement achievement: Achievement) {
         achievementLevelView.levelCountLabel.text = achievement.level
+        progressBarView.progressValue = CGFloat(achievement.progressPercentage)
         self.progressPointsLabel.text = "\(achievement.progress)pts"
         self.totalPointsLabel.text = "\(achievement.total)pts"
-        // Set image view using image url???
     }
     
     override func layoutSubviews() {
